@@ -1,0 +1,113 @@
+.slider-wrapper.default>div {
+	display: none
+}
+.hero-slide-main{
+	margin:0;
+	padding:0;
+	display:block;
+}
+.slider-wrapper.default>div #slides {
+	font-weight: 400;
+	color: white;
+	line-height: normal
+}
+.slider-wrapper.default>div #slides .hero-slide-item{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 8%;
+	max-width: 50%;
+	margin: 0 auto;
+	display: inline-block;
+	text-align: left;
+}
+.slider-wrapper.default>div #slides h2.content{
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 1.1;
+	width: 100%;
+	color: #fff;
+	padding-bottom: 20px;
+	display: inline-block;
+}
+.slider-wrapper.default>div #slides img {
+	border: 0
+}
+.slider-wrapper.default>div #slides .hero-slide-main::before {
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	background-color: var(--color-secondary);
+	opacity: 0.5;
+}
+.slider-wrapper.default>div #slides span, .slider-wrapper.default>div #slides p {
+	font-size: 20px;
+	color: #cdcdcd;
+	line-height: 1.6;
+	display: inline-block;
+	padding-left: 5px;
+}
+.slider-wrapper.default>div .social {
+	position: absolute;
+	top: 4%;
+	left: 3%;
+	z-index: 10000
+}
+.slider-wrapper.default>div .social div {
+	float: left;
+	margin-right: 10px
+}
+.slider-wrapper.default>div #bullets {
+	height: 10px;
+	position: absolute;
+	bottom: 4%;
+	right: 0;
+	z-index: 99;
+	left: 0;
+	text-align: center;
+	margin: 0 auto;
+	display: inline-table;
+}
+.slider-wrapper.default>div #bullets .bullet {
+	min-height: 12px;
+	min-width: 12px;
+	border-radius: 6px;
+	margin-left: 5px;
+	float: left;
+	cursor: pointer;
+	background-color: #b4b4b4;
+	background-color: rgba(255,255,255,0.6)
+}
+.slider-wrapper.default>div #bullets .bullet:hover {
+	background-color: var(--color-white)
+}
+.slider-wrapper.default>div #bullets .bullet.selected {
+	background-color: var(--color-primary)
+}
+.slider-wrapper.default>div #left {
+	position: absolute;
+	width: 47px;
+	height: 47px;
+	background-image: url(../../assets/img/arrow.png);
+	left: 2%;
+	top: 50%;
+	margin-top: -24px;
+	z-index: 999999;
+	cursor: pointer
+}
+.slider-wrapper.default>div #right {
+	position: absolute;
+	width: 47px;
+	height: 47px;
+	background-image: url(../../assets/img/arrow.png);
+	background-position: right top;
+	right: 2%;
+	top: 50%;
+	margin-top: -24px;
+	z-index: 999999;
+	cursor: pointer
+}
